@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tablet__error__div {
+  display: none;
+}
+.tablet_podcast_logos {
+  display: none;
+}
+.bg__dots {
+  display: none;
+}
+
+body {
+  width: 100vw;
+  font-family: "Chivo", sans-serif;
+  font-weight: 400;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/mobile/image-host.jpg);
+}
+.card {
+  width: 100%;
+  height: 100vh;
+
+  padding: 0 24px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  padding-top: 62px;
+  margin-bottom: 57px;
+}
+
+.top__section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 33px;
+}
+
+.card__title {
+  font-size: 27px;
+  line-height: 38px;
+  color: #54e6af;
+  font-weight: 400;
+  min-width: 327px;
+  text-align: center;
+}
+.everywhere {
+  color: #fff;
+}
+.info {
+  font-size: 15px;
+  line-height: 25px;
+  color: #c2cbe5;
+}
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+.spotify_logo {
+  width: 56px;
+  height: 17px;
+  margin-right: 23px;
+}
+.apple__podcast__logo {
+  width: 45px;
+  height: 17px;
+  margin-right: 25px;
+}
+.google__podcasts__logo {
+  width: 73px;
+  height: 11px;
+  margin-right: 16px;
+}
+
+.pocket__casts__logo {
+  width: 77px;
+  height: 15px;
+}
+.email__box {
+  padding: 9px 0px 9px 32px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 28px;
+  border-radius: 28px;
+  background-color: #2c344b;
+  border: none;
+  margin-bottom: 16px;
+}
+.submit__button {
+  padding: 9px 109px;
+  font-size: 14px;
+  width: 100%;
+  line-height: 28px;
+  border-radius: 28px;
+  border: none;
+  background: #54e6af;
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+}
+.error {
+  display: none;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fb3e3e;
+  margin: 10px 0;
+  margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 100%;
+    background-color: #121725;
+    background-image: none;
+
+    background-size: 491px 767px;
+  }
+  .mobile__error__div {
+    display: none;
+  }
+  .tablet__error__div {
+    display: block;
+  }
+  .top__section {
+    gap: 31px;
+    margin-bottom: 40px;
+  }
+  header {
+    justify-content: start;
+  }
+  .logos {
+    display: none;
+  }
+  .logo {
+    margin-top: 50px;
+    margin-bottom: 152px;
+
+    padding-top: 0;
+  }
+
+  .card {
+    width: 100%;
+    background-image: url(assets/tablet/image-host.jpg);
+    background-position: top 0 right 0;
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+  .card__title {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 400;
+    margin-top: 93px;
+  }
+  .info {
+    font-size: 18px;
+    line-height: 28px;
+    color: #c2cbe5;
+  }
+  form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 208px;
+
+    background-color: #2c344b;
+    border-radius: 28px;
+    padding: 5px;
+    margin-bottom: 64px;
+  }
+  .tablet_podcast_logos {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .main__container {
+    width: 635px;
+    height: 510px;
+    background-color: #121725;
+    margin-bottom: 256px;
+
+    margin-left: 40px;
+  }
+
+  .email__box {
+    background-color: #2c344b;
+    border-radius: 28px;
+    width: 60%;
+
+    margin-bottom: 0;
+  }
+  .email__box:focus {
+    outline: none;
+  }
+  .submit__button {
+    padding: 9px 27px;
+    font-size: 14px;
+    width: 162px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: "Chivo", sans-serif;
+  }
+  .bg__dots {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    padding: 102px 0 130px 165px;
+    position: relative;
+  }
+  .card {
+    height: 100%;
+  }
+  .logo {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  header {
+    margin-top: 0;
+    margin-bottom: 103px;
+  }
+  .main__container {
+    margin-left: 0;
+    width: 723px;
+  }
+  .card {
+    background-image: url(assets/desktop/image-host.jpg);
+  }
+  .bg__dots {
+    position: absolute;
+    bottom: 100px;
+
+    left: 83%;
+  }
+  .card__title {
+    font-size: 52px;
+    line-height: 62px;
+    margin-top: 88px;
+    padding-right: 58px;
+  }
+  .top__section {
+    gap: 24px;
+  }
+}

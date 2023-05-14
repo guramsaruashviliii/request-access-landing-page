@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Pod request access landing page</title>
+  </head>
+  <body>
+    <div class="card">
+      <header>
+        <img class="logo" src="assets/desktop/logo.svg" alt="logo" />
+      </header>
+      <main class="main__container">
+        <section class="top__section">
+          <h1 class="card__title">
+            Publish your podcasts <b class="everywhere"> everywhere. </b>
+          </h1>
+          <p class="info">
+            Upload your audio to Pod with a single click. We’ll then distribute
+            your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
+            Casts and more!
+          </p>
+        </section>
+
+        <div class="logos">
+          <img
+            class="spotify_logo"
+            src="assets/mobile/Spotify_logo_with_text.png"
+            alt="spotify"
+          />
+
+          <img
+            class="apple__podcast__logo"
+            src="assets/mobile/Combined Shape.png"
+            alt="apple-podcast"
+          />
+          <img
+            class="google__podcasts__logo"
+            src="assets/mobile/Group (5).png"
+            alt="google-podcasts"
+          />
+
+          <img
+            class="pocket__casts__logo"
+            src="assets/mobile/Group 4.png"
+            alt="spotify"
+          />
+        </div>
+        <section class="email__section">
+          <div class="bottom">
+            <form action="#">
+              <input
+                class="email__box"
+                type="email"
+                name="email"
+                id="email"
+                value=""
+                placeholder="Email address"
+              />
+              <div class="mobile__error__div">
+                <p class="error" id="error">Oops! Please check your email</p>
+              </div>
+              <button class="submit__button" type="submit" id="button" value="">
+                Request Access
+              </button>
+            </form>
+            <div class="tablet__error__div">
+              <p class="error" id="tablet__error">
+                Oops! Please check your email
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="tablet_podcast_logos">
+          <img
+            class="tablet_spotify_logo"
+            src="assets/desktop/spotify.svg"
+            alt="spotify"
+          />
+
+          <img
+            class="tablet_apple__podcast__logo"
+            src="assets/desktop/apple-podcast.svg"
+            alt="apple-podcast"
+          />
+          <img
+            class="tablet_google__podcasts__logo"
+            src="assets/desktop/google-podcasts.svg"
+            alt="google-podcasts"
+          />
+
+          <img
+            class="tablet_pocket__casts__logo"
+            src="assets/desktop/google-podcasts.svg"
+            alt="spotify"
+          />
+        </div>
+
+        <img class="bg__dots" src="assets/desktop/bg-pattern-dots.svg" alt="" />
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
